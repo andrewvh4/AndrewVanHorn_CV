@@ -19,6 +19,10 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{soul}
+
+\setuldepth{B}
 
 
 %----------FONT OPTIONS----------
@@ -47,7 +51,7 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-\pagestyle{myheadings}
+
 
 \raggedbottom
 \raggedright
@@ -63,6 +67,7 @@
 
 %-------------------------
 % Custom commands
+
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -124,10 +129,10 @@
 
 \begin{center}
     \textbf{\Huge \scshape Andrew S. Van Horn} \\ \vspace{1pt}
-    \small (314) 546-6228 $|$ \href{mailto:a.vanhorn@mst.edu}{\underline{a.vanhorn@mst.edu}} $|$ 
-    \href{https://linkedin.com/in/andrewvanhorn}{\underline{linkedin.com/in/andrewvanhorn}} $|$
-    \href{https://github.com/andrewvh4}{\underline{github.com/andrewvh4}} \\
-    1655 Legend Ln. St. Louis, MO 63146\\
+    \small (314) 546-6228 $|$ \href{mailto:a.vanhorn@mst.edu}{\ul{a.vanhorn@mst.edu}} $|$ 
+    \href{https://linkedin.com/in/andrewvanhorn}{\ul{linkedin.com$/$in/andrewvanhorn}} $|$
+    \href{https://github.com/andrewvh4}{\ul{github.com/andrewvh4}} \\
+    1655 Legend Lane, St. Louis, MO 63146\\
     \textit{Updated: \today}
 \end{center}
 
@@ -151,8 +156,8 @@
       {Sandia National Laboratories}{Livermore, CA}
       {Intern Year Round - R\&D Undergraduate}{June 2020 -- Present}
       \resumeItemListStart
-        \resumeItem{Developed Monte-Carlo simulation to model and characterize position sensor error for system improvement}
-        \resumeItem{Developed automated PCB Unit Test for functional verification}
+        \resumeItem{Developed Monte-Carlo simulations to model and characterize position sensor error for system improvement}
+        \resumeItem{Developed automated PCB Unit Tester for functional verification}
         \resumeItem{Researched and reported on high-density memory devices for R\&D projects}
         \resumeItem{Collaborated to define project requirements and review completed work from a remote environment}
       \resumeItemListEnd
@@ -173,14 +178,16 @@
       \resumeItemListStart
         \resumeItem{Managed technical efforts for the 100-member Mars Rover Design Team}
         \resumeItem{Led a team of 14 subsystem leaders in managing the design, assembly, and verification of the Rover project}
-        \resumeItem{Coordinated with other Executive Officers and the University to create an environment for success}
-        \resumeItem{Ensured team was 2 weeks ahead on meeting program deliverable before the program was terminated due to COVID 2020 pandemic}
-        \resumeItem{Managed team activities through early months of COVID 2020 pandemic}
+        \resumeItem{Coordinated high-level team activity with other Executive Officers and the University}
+        \resumeItem{Managed and conducted regular design reviews}
+        \resumeItem{Ensured team was 2 weeks ahead on meeting program deliverable before the program was terminated due to COVID-19 pandemic}
+        \resumeItem{Managed team activities through early months of COVID-19 pandemic}
       \resumeItemListEnd
       \resumeSubheadingRed
   		{Electrical Architect}{June 2018 -- May 2019}
 		\resumeItemListStart
-		\resumeItem{Developed and taught training course to teach embedded hardware design to new team members}
+		\resumeItem{Acted as subject matter expert on embedded system design}
+		\resumeItem{Developed and taught training course on embedded hardware development for new members}
 		\resumeItem{Managed and maintained Electrical Lab space, including components stock, tool maintenance, and procurement}
 		\resumeItem{Implemented unit test procedures to verify systems before release}
 		\resumeItem{Reviewed and approved all designs for electrical systems}
@@ -190,6 +197,7 @@
 		{Active Member - Electrical Subteam}{August 2017 -- May 2019}
 		\resumeItemListStart
 		\resumeItem{Developed numerous embedded systems to control Rover functions including sensor interface and motion control}
+		\resumeItem{Contributed to research on IMU sensor fusion algorithms, inverse kinematics motion control, portable molecular spectroscopy, and terrain mapping}
 		\resumeItem{Developed a Charged-Coupled Device interface for a custom UV Raman Spectrometer}
 	\resumeItemListEnd
 
@@ -205,24 +213,9 @@
 		\resumeItemListStart
 		\resumeItem{Developed programs to assist in discovery of properties in the Theoretical Quantum Cellular Automata framework}
 		\resumeItem{Assisted in drafting, formatting, and compiling numerous manuscripts for submission}
-		\resumeItem{Contribute to and analyzed theories on general-purpose Quantum Computing}
+		\resumeItem{Contributed to and analyzed theories on general-purpose Quantum Computing}
 		\resumeItemListEnd
 \resumeSubHeadingListEnd
-
-%-----------Coursework---------
-\section{Upper/Graduate-Level Coursework}
-\begin{itemize}[leftmargin=0.15in, label={}]
-	\small{\item{
-			\textbf{Quantum Mechanics 1}{ Physics 6201, Spring 2021} \\
-			\textbf{Linear Algebra II}{ Mathematics 5108, Spring 2021}\\
-			\textbf{Introduction to Quantum Computing}{ Computer Science 5001, Spring 2020 -- A} \\
-			\textbf{Partial Differential Equations}{ Mathematics 5325, Fall 2019 -- B}\\
-			\textbf{Embedded Processor System Design}{ Electrical Engineering 5160, Fall 2019 -- A}\\
-			\textbf{Introduction to Complex Variables}{ Mathematics 5351, Fall 2018 -- A} \\
-			
-			
-	}}
-\end{itemize}
 
 %-----------Certifications---------
 \section{Certifications}
@@ -258,21 +251,36 @@
      \quad \textit{Experienced}{: C \textbullet{}  C++ \textbullet{} C\# .Net \textbullet{}	Git \textbullet{} Python \textbullet{} MatLab} \textbullet{} \LaTeX\ \\
      \quad \textit{Familiar}{: Assembly \textbullet{} LabView \textbullet{} VB .Net \textbullet{} HTML \textbullet{} JS \textbullet{} Qt \textbullet{} Linux \textbullet{} APL} \\
      \textbf{Programming Skills}{: Data Manipulation \textbullet{} GUI Development \textbullet{} Embedded Control \textbullet{} Hardware Interface} \\
-     \textbf{Other Skills}{: PCB Design \textbullet{} Circuit Simulation} \\
+     \textbf{Other Skills}{: PCB Design (KiCAD, Eagle) \textbullet{} Circuit Simulation} \textbullet{} NX-CAD\\
     }}
  \end{itemize}
+
+%-----------Coursework---------
+\section{Upper/Graduate-Level Coursework}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+			\textbf{Quantum Mechanics 1}{ Physics 6201, Spring 2021} \\
+			\textbf{Linear Algebra II}{ Mathematics 5108, Spring 2021}\\
+			\textbf{Introduction to Quantum Computing}{ Computer Science 5001, Spring 2020 -- A} \\
+			\textbf{Partial Differential Equations}{ Mathematics 5325, Fall 2019 -- B}\\
+			\textbf{Embedded Processor System Design}{ Electrical Engineering 5160, Fall 2019 -- A}\\
+			\textbf{Introduction to Complex Variables}{ Mathematics 5351, Fall 2018 -- A} \\
+			
+			
+	}}
+\end{itemize}
 
 %---------Publications------------
 \section{Publications}
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
-			C. H. Wu, \textbf{Andrew Van Horn} "Space-Time Crystals and the Relation to Quantum Computing", Phys. Rev. Letters (In Review)
+			C. H. Wu, \textbf{Andrew Van Horn}, ``Space-Time Crystals and the Relation to Quantum Computing", Phys. Rev. Letters (In Review)
 	}}
 	\small{\item{
-		C. H. Wu, \textbf{Andrew Van Horn} "Irreversibility in Quantum Computing and the Relation to Space-Time Crystals", Research Inventy: International Journal of Engineering and Science, 10, 2 (2020)
+		C. H. Wu, \textbf{Andrew Van Horn}, ``Irreversibility in Quantum Computing and the Relation to Space-Time Crystals", Research Inventy: International Journal of Engineering and Science, 10, 2 (2020)
 	}}
 	\small{\item{
-			Jacob Lipina, \textbf{Andrew Van Horn}, Judah Schad, Kurt Kosbar "Wireless Soil Sensor Pods for Long-Term Data Collection", International Telemetering Conference Proceedings, 54 (2018)
+			Jacob Lipina, \textbf{Andrew Van Horn}, Judah Schad, Kurt Kosbar, ``Wireless Soil Sensor Pods for Long-Term Data Collection", International Telemetering Conference Proceedings, 54 (2018)
 	}}
 \end{itemize}	
 
@@ -280,35 +288,38 @@
 \section{Presentations}
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
-			\textbf{Andrew Van Horn}, "Space-Time Mixing of Quantum Computing in an Entangled Atomic Chain and Time Crystals", American Physical Society March Meeting, Denver CO (2020 -- Cancelled)
+			\textbf{Andrew Van Horn}, ``Space-Time Mixing of Quantum Computing in an Entangled Atomic Chain and Time Crystals", American Physical Society March Meeting, Denver CO (2020 -- Canceled)
 	}}
 	\small{\item{
-			Jacob Lipina, \textbf{Andrew Van Horn}, Judah Schad, "Wireless Soil Sensor Pods for Long-Term Data Collection", International Telemetering Conference, Phoenix AZ (2018)
+			Jacob Lipina, \textbf{Andrew Van Horn}, Judah Schad, ``Wireless Soil Sensor Pods for Long-Term Data Collection", International Telemetering Conference, Phoenix AZ (2018)
 	}}
 \end{itemize}
 
 %---------Awards and Honors------------
-\section{Presentations}
+\section{Awards and Honors}
 \begin{itemize}[leftmargin=0.15in, label={}]
-	\small{\item{\textbf{Missouri Department of Higher Education} -- University Scholarship (2017--2020)\\
-	\textbf{Missouri University of Science and technology} -- Bright Flight Scholarship (2017--2020)
+	\small{\item{\textbf{Missouri University of Science and Technology} -- University Scholarship (2017--2020)\\
+	\textbf{Missouri Department of Higher Education} -- Bright Flight Scholarship (2017--2020)
 }}
 \end{itemize}
 
 %---------Competitions------------
 \section{Competitions}
 \begin{itemize}[leftmargin=0.15in, label={}]
-	\small{\item{\textbf{University Rover Challenge:} -- Competition Team, $5^{th}$ International (2019)\\
-				 \textbf{University Rover Challenge:} -- Competition Team, $2^{nd}$ International (2020)\\
+	\small{\item{\textbf{University Rover Challenge:} Competition Team, Canceled (2020)\\
+				 \textbf{University Rover Challenge:} Competition Team, $5^{th}$ International (2019)\\
+				 \textbf{University Rover Challenge:} Competition Team, $2^{nd}$ International (2018)\\
 	}}
 \end{itemize}
 
 %---------Teaching------------
 \section{Teaching Experience}
 \begin{itemize}[leftmargin=0.15in, label={}]
-	\small{\item{\textbf{PCB Design} -- A 3-week course on schematic design, PCB layout, and assembly, (2018)
+	\small{\item{\textbf{PCB Design} -- A 3-week course on schematic design, PCB layout, and assembly (2018)
 	}}
 \end{itemize}
+
+\thispagestyle{myheadings}
 
 %-------------------------------------------
 \end{document}
