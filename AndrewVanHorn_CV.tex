@@ -91,6 +91,14 @@
 		\textit{\small#7} & \textit{\small #8} \\
 	\end{tabular*}\vspace{-7pt}
 }
+\newcommand{\resumeSubheadingExta}[6]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+		\textit{\small#5} & \textit{\small #6} \\
+	\end{tabular*}\vspace{-7pt}
+}
 \newcommand{\resumeSubheadingRed}[2]{
 	\vspace{-2pt}\item
 	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -129,10 +137,10 @@
 
 \begin{center}
     \textbf{\Huge \scshape Andrew S. Van Horn} \\ \vspace{1pt}
-    \small (314) 546-6228 $|$ \href{mailto:a.vanhorn@mst.edu}{\ul{a.vanhorn@mst.edu}} $|$ 
+    \small (314) 546-6228 $|$ \href{mailto:andrew.van.horn@duke.edu}{\ul{andrew.van.horn@duke.edu}} $|$ 
     \href{https://linkedin.com/in/andrewvanhorn}{\ul{linkedin.com$/$in/andrewvanhorn}} $|$
     \href{https://github.com/andrewvh4}{\ul{github.com/andrewvh4}} \\
-    1655 Legend Lane, St. Louis, MO 63146\\
+    1505 Duke University Rd. 3A, Durham, NC 27701\\
     \textit{Updated: \today}
 \end{center}
 
@@ -140,10 +148,15 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
+    \resumeSubheadingExta
+	    {Duke University}{Durham, NC}
+	    {PhD Electrical Engineering}{Aug. 2021 -- Present}
+	    {Duke Quantum Center}{Dr. Jungsang Kim}
+	    {}{}
     \resumeSubheadingExt
       {Missouri University of Science and Technology}{Rolla, MO}
       {Bachelor of Science Electrical Engineering}{Aug. 2017 -- May 2021}
-      {Bachelor of Science Computer Engineering}{GPA -- 3.837/4.0}
+      {Bachelor of Science Computer Engineering}{GPA -- 3.865/4.0}
       {Minor in Mathematics and Physics}{}
   \resumeSubHeadingListEnd
 
@@ -153,13 +166,20 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Sandia National Laboratories}{Livermore, CA}
-      {Intern Year Round - R\&D Undergraduate}{June 2020 -- Present}
+      {Sandia National Laboratories}{Albuquerque, NM}
+      {Intern Year Round - R\&D Undergraduate (Telemetry)}{June 2020 -- Feb. 2021}
       \resumeItemListStart
         \resumeItem{Developed Monte-Carlo simulations to model and characterize position sensor error for system improvement}
         \resumeItem{Developed automated PCB Unit Tester for functional verification}
         \resumeItem{Researched and reported on high-density memory devices for R\&D projects}
         \resumeItem{Collaborated to define project requirements and review completed work from a remote environment}
+      \resumeItemListEnd
+      \resumeSubheadingRed
+      {Intern Year Round - R\&D Undergraduate (QSCOUT)}{Feb. 2021 -- Aug. 2021}
+      \resumeItemListStart
+	      \resumeItem{Developed RF Frequency Servo PCB utilizing an FPGA and high-precision DAC/ADC}
+	      \resumeItem{Assisted in the assembly of a trapped ion cryogenic quantum computing system}
+	      \resumeItem{Developed software control wrappers to interface COTS devices with control server}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -221,7 +241,7 @@
 \section{Certifications}
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
-			\textbf{US Department of Energy}{: Q-Clearance (2020)}\\
+			\textbf{US Department of Energy}{: Q-Clearance -- inactive (2020)}\\
 			\textbf{ARRL}{: General Class License (2015)}	
 	}}
 \end{itemize}
@@ -248,10 +268,10 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Programming Languages}\\
-     \quad \textit{Experienced}{: C \textbullet{}  C++ \textbullet{} C\# .Net \textbullet{}	Git \textbullet{} Python \textbullet{} MatLab} \textbullet{} \LaTeX\ \\
-     \quad \textit{Familiar}{: Assembly \textbullet{} LabView \textbullet{} VB .Net \textbullet{} HTML \textbullet{} JS \textbullet{} Qt \textbullet{} Linux \textbullet{} APL} \\
+     \quad \textit{Experienced}{: C \textbullet{}  C++ \textbullet{} C\# \textbullet{} .Net \textbullet{}	Git \textbullet{} Python \textbullet{} MatLab \textbullet{} \LaTeX\ \textbullet{} Verilog} \\
+     \quad \textit{Familiar}{: Assembly \textbullet{} LabView \textbullet{} VB \textbullet{} HTML \textbullet{} JS \textbullet{} Qt \textbullet{} Linux \textbullet{} APL \textbullet{} Java} \\
      \textbf{Programming Skills}{: Data Manipulation \textbullet{} GUI Development \textbullet{} Embedded Control \textbullet{} Hardware Interface} \\
-     \textbf{Other Skills}{: PCB Design (KiCAD, Eagle) \textbullet{} Circuit Simulation} \textbullet{} NX-CAD\\
+     \textbf{Other Skills}{: PCB Design (KiCAD, Eagle) \textbullet{} NX-CAD \textbullet{} Circuit Simulation} \\
     }}
  \end{itemize}
 
